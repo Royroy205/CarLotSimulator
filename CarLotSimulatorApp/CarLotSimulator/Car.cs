@@ -9,9 +9,9 @@ namespace CarLotSimulator
     public class Car
     {
         public Car() 
-        { 
-        
-        
+        {    
+            CarCreated();
+            CarLot._numberofCars ++;
         
         }
 
@@ -24,8 +24,8 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
-        
-        
+            CarCreated();
+            CarLot._numberofCars++;
         
         
         }
@@ -67,7 +67,12 @@ namespace CarLotSimulator
 
         }
 
+        public static void CarCreated() 
+        {
 
+            Console.WriteLine("Car was created");
+        
+        }
 
 
 

@@ -7,6 +7,7 @@ namespace CarLotSimulator
         static void Main(string[] args)
         {
             var carLot = new CarLot();
+            Console.WriteLine($"Number of cars in car lot : {CarLot._numberofCars}");
 
             //TODO
 
@@ -30,7 +31,7 @@ namespace CarLotSimulator
             charger.HonkNoise = "Honk";
 
             carLot.ParkingLot.Add(charger);
-
+            Console.WriteLine($"Number of cars in car lot : {CarLot._numberofCars}");
 
             //Object initializer syntax
             var ford = new Car()
@@ -43,7 +44,7 @@ namespace CarLotSimulator
                 HonkNoise = "beep"
             };
 
-
+            Console.WriteLine($"Number of cars in car lot : {CarLot._numberofCars}");
 
 
 
@@ -61,7 +62,7 @@ namespace CarLotSimulator
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
             var M3 = new Car(2023, "BMW", "M3", "crash", "beep", false);
             carLot.ParkingLot.Add(M3);
-
+            Console.WriteLine($"Number of cars in car lot : {CarLot._numberofCars}");
             //*************BONUS X 2*************//
 
             //Create a CarLot class
